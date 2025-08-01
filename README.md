@@ -14,6 +14,12 @@
   </style>
 </head>
 <body class="bg-gray-100">
+  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #d0f0c0; /* Verde claro */
+  color: #333;
+
   <!-- Navbar -->
   <nav class="bg-white shadow p-4 flex justify-between items-center">
     <h1 class="text-2xl font-bold text-blue-800">Zapatillas Reyes</h1>
