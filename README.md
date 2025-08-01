@@ -180,7 +180,7 @@
     <h2 style="text-align:center;">Contáctanos</h2>
     <p style="text-align:center;">📱 WhatsApp: +51 937477530</p>
     <p style="text-align:center;">📧 Email: rigo_reyes1@outlook.com</p>
-    <p style="text-align:center;">📍 Dirección: Chiclsyo, Perú</p>
+    <p style="text-align:center;">📍 Dirección: Chiclayo, Perú</p>
   </section>
 
   <footer>
