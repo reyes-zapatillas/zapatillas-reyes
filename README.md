@@ -1,44 +1,70 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zapatillas Reyes</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      background: #d0f0c0; /* Verde claro */
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial Black', sans-serif;
+      background-color: #000;
+      color: #fff;
       scroll-behavior: smooth;
     }
 
     header {
-      background-color: #000;
-      color: #fff;
-      padding: 1rem;
+      background-color: #111;
+      padding: 20px;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
     }
 
     nav {
-      background-color: #222;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
+      gap: 25px;
+      background-color: #222;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
+      text-transform: uppercase;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #e63946;
+    }
+
+    .hero {
+      background: url('https://wallpaperaccess.com/full/1355617.jpg') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      font-size: 3rem;
+      color: #fff;
     }
 
     section {
@@ -47,41 +73,54 @@
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
 
     .product {
-      background: white;
+      background: #1a1a1a;
       padding: 15px;
       border-radius: 10px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
     }
 
     .product img {
       width: 100%;
-      height: auto;
       border-radius: 8px;
     }
 
-    .product button {
-      background-color: #e63946;
-      color: white;
-      border: none;
-      padding: 10px;
+    .product h3 {
       margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    .product p {
+      color: #e63946;
+      font-weight: bold;
+    }
+
+    .product button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #e63946;
+      border: none;
+      color: white;
       cursor: pointer;
       border-radius: 5px;
     }
 
     #cart {
-      background: white;
-      border: 2px solid #000;
+      background: #111;
+      border: 1px solid #333;
+      padding: 20px;
       border-radius: 10px;
-      padding: 15px;
-      width: 300px;
-      margin-top: 20px;
+      max-width: 400px;
+      margin: 0 auto;
     }
 
     .cart-item {
@@ -91,18 +130,19 @@
     }
 
     .cart-item button {
-      background: #000;
-      color: white;
+      background: #444;
+      color: #fff;
       border: none;
+      padding: 3px 6px;
       cursor: pointer;
-      padding: 2px 5px;
     }
 
     footer {
       background: #111;
-      color: white;
+      color: #aaa;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -110,58 +150,49 @@
 
   <header>
     <h1>Zapatillas Reyes</h1>
-    <p>Tu estilo comienza por los pies</p>
   </header>
 
   <nav>
     <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
+    <a href="#hombres">Hombres</a>
+    <a href="#mujeres">Mujeres</a>
+    <a href="#ofertas">Ofertas</a>
     <a href="#contacto">Contacto</a>
     <a href="#carrito">Carrito</a>
   </nav>
 
-  <section id="inicio">
-    <h2>Bienvenido</h2>
-    <p>Explora las mejores zapatillas para tu estilo de vida activo y urbano.</p>
+  <section class="hero" id="inicio">
+    <h2>Lleva tu juego al siguiente nivel</h2>
   </section>
 
-  <section id="nosotros">
-    <h2>Nosotros</h2>
-    <p>Somos Zapatillas Reyes, una tienda peruana dedicada a ofrecer calzado de calidad, diseño moderno y comodidad. Nuestra misión es llevar estilo y rendimiento a tus pasos.</p>
-  </section>
-
-  <section id="productos">
-    <h2>Productos</h2>
+  <section id="hombres">
+    <h2 style="text-align:center; margin-bottom: 20px;">Zapatillas para Hombres</h2>
     <div class="products" id="product-list">
-      <!-- Productos aquí -->
+      <!-- Productos se cargan aquí -->
     </div>
-  </section>
-
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📞 Teléfono: +51 999 999 999</p>
-    <p>📧 Email: contacto@zapatillasreyes.pe</p>
-    <p>📍 Dirección: Lima, Perú</p>
   </section>
 
   <section id="carrito">
-    <h2>🛒 Carrito de compras</h2>
-    <div id="cart">
-      <div id="cart-items"></div>
-      <p><strong>Total: S/ <span id="total">0.00</span></strong></p>
-    </div>
+    <h2 style="text-align:center;">🛒 Tu carrito</h2>
+    <div id="cart"></div>
+  </section>
+
+  <section id="contacto">
+    <h2 style="text-align:center;">Contáctanos</h2>
+    <p style="text-align:center;">📱 WhatsApp: +51 999 999 999</p>
+    <p style="text-align:center;">📧 Email: contacto@zapatillasreyes.pe</p>
+    <p style="text-align:center;">📍 Dirección: Lima, Perú</p>
   </section>
 
   <footer>
-    <p>© 2025 Zapatillas Reyes. Todos los derechos reservados.</p>
+    © 2025 Zapatillas Reyes. Inspirado en Nike.
   </footer>
 
   <script>
     const products = [
-      { id: 1, name: 'Zapatilla Nike Air', price: 299.90, image: 'https://via.placeholder.com/200x150?text=Nike+Air' },
-      { id: 2, name: 'Adidas Runner Pro', price: 249.90, image: 'https://via.placeholder.com/200x150?text=Adidas+Runner' },
-      { id: 3, name: 'Puma Flex', price: 199.90, image: 'https://via.placeholder.com/200x150?text=Puma+Flex' }
+      { id: 1, name: 'Air Max 270', price: 399.90, image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e46e2720-2e2e-4da2-b198-e17d11d5aeda/air-max-270-zapatillas.png' },
+      { id: 2, name: 'Nike ZoomX', price: 459.90, image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f6d38191-dc2e-4d10-8885-1e6b2162f8f9/zoomx-vaporfly-next-3-zapatillas.png' },
+      { id: 3, name: 'Nike Pegasus', price: 359.90, image: 'https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/71d905cf-41fd-4f83-9e91-87f4a3152a49/pegasus-40-zapatillas.png' }
     ];
 
     const cart = [];
@@ -175,7 +206,7 @@
           <img src="${product.image}" alt="${product.name}">
           <h3>${product.name}</h3>
           <p>S/ ${product.price.toFixed(2)}</p>
-          <button onclick="addToCart(${product.id})">Añadir al carrito</button>
+          <button onclick="addToCart(${product.id})">Añadir</button>
         `;
         productList.appendChild(div);
       });
@@ -193,10 +224,14 @@
     }
 
     function updateCart() {
-      const cartItems = document.getElementById('cart-items');
-      const totalEl = document.getElementById('total');
-      cartItems.innerHTML = '';
+      const cartEl = document.getElementById('cart');
+      cartEl.innerHTML = '';
       let total = 0;
+
+      if (cart.length === 0) {
+        cartEl.innerHTML = '<p style="text-align:center;">Tu carrito está vacío.</p>';
+        return;
+      }
 
       cart.forEach((item, index) => {
         const div = document.createElement('div');
@@ -206,15 +241,17 @@
           <span>S/ ${item.price.toFixed(2)}</span>
           <button onclick="removeFromCart(${index})">X</button>
         `;
-        cartItems.appendChild(div);
+        cartEl.appendChild(div);
         total += item.price;
       });
 
-      totalEl.textContent = total.toFixed(2);
+      const totalText = document.createElement('p');
+      totalText.innerHTML = `<strong>Total: S/ ${total.toFixed(2)}</strong>`;
+      cartEl.appendChild(totalText);
     }
 
     renderProducts();
   </script>
-</body>
-</html>
+
+
 
