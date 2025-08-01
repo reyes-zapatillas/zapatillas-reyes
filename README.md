@@ -178,13 +178,13 @@
 
   <section id="contacto">
     <h2 style="text-align:center;">Contáctanos</h2>
-    <p style="text-align:center;">📱 WhatsApp: +51 999 999 999</p>
-    <p style="text-align:center;">📧 Email: contacto@zapatillasreyes.pe</p>
-    <p style="text-align:center;">📍 Dirección: Lima, Perú</p>
+    <p style="text-align:center;">📱 WhatsApp: +51 937477530</p>
+    <p style="text-align:center;">📧 Email: rigo_reyes1@outlook.com</p>
+    <p style="text-align:center;">📍 Dirección: Chiclsyo, Perú</p>
   </section>
 
   <footer>
-    © 2025 Zapatillas Reyes. Inspirado en Nike.
+    © 2025 Zapatillas Reyes.
   </footer>
 
   <script>
