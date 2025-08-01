@@ -13,9 +13,9 @@
 
     body {
       font-family: 'Arial Black', sans-serif;
-      background-color: #000;
-      color: #fff;
-      scroll-behavior: smooth;
+  background-color: #ffffff; /* fondo blanco */
+  color: #111; /* texto oscuro para que se vea bien */
+  scroll-behavior: smooth;
     }
 
     header {
