@@ -13,27 +13,23 @@
 
     body {
       font-family: 'Arial Black', sans-serif;
-  background-color: #ffffff; /* fondo blanco */
-  color: #111; /* texto oscuro para que se vea bien */
-  scroll-behavior: smooth;
+      background-color: #ffffff; /* Fondo blanco */
+      color: #111;
+      scroll-behavior: smooth;
     }
 
     header {
-      background-color: #111;
+      background-color: #ffffff;
+      color: #000;
       padding: 20px;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      color: #fff;
-    }
-
     nav {
+      background-color: #f8f8f8;
       display: flex;
       justify-content: center;
       gap: 25px;
-      background-color: #222;
       padding: 15px 0;
       position: sticky;
       top: 0;
@@ -41,7 +37,7 @@
     }
 
     nav a {
-      color: #fff;
+      color: #000;
       text-decoration: none;
       font-weight: bold;
       text-transform: uppercase;
@@ -61,10 +57,10 @@
     }
 
     .hero h2 {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(255, 255, 255, 0.7);
       padding: 20px;
       font-size: 3rem;
-      color: #fff;
+      color: #000;
     }
 
     section {
@@ -78,11 +74,13 @@
     }
 
     .product {
-      background: #1a1a1a;
+      background: #f9f9f9;
+      color: #000;
       padding: 15px;
       border-radius: 10px;
       text-align: center;
       transition: transform 0.3s;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
     }
 
     .product:hover {
@@ -115,12 +113,13 @@
     }
 
     #cart {
-      background: #111;
-      border: 1px solid #333;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
       padding: 20px;
       border-radius: 10px;
       max-width: 400px;
       margin: 0 auto;
+      color: #000;
     }
 
     .cart-item {
@@ -130,7 +129,7 @@
     }
 
     .cart-item button {
-      background: #444;
+      background: #999;
       color: #fff;
       border: none;
       padding: 3px 6px;
@@ -138,8 +137,8 @@
     }
 
     footer {
-      background: #111;
-      color: #aaa;
+      background: #eeeeee;
+      color: #333;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
@@ -179,13 +178,13 @@
 
   <section id="contacto">
     <h2 style="text-align:center;">Contáctanos</h2>
-    <p style="text-align:center;">📱 WhatsApp: +51 937477530</p>
-    <p style="text-align:center;">📧 Email: rigo_reyes1@outlook.com</p>
-    <p style="text-align:center;">📍 Dirección: Chiclayo, Perú</p>
+    <p style="text-align:center;">📱 WhatsApp: +51 999 999 999</p>
+    <p style="text-align:center;">📧 Email: contacto@zapatillasreyes.pe</p>
+    <p style="text-align:center;">📍 Dirección: Lima, Perú</p>
   </section>
 
   <footer>
-    © 2025 Zapatillas Reyes.
+    © 2025 Zapatillas Reyes. Inspirado en Nike.
   </footer>
 
   <script>
@@ -253,5 +252,6 @@
     renderProducts();
   </script>
 
-
+</body>
+</html>
 
